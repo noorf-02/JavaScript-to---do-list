@@ -8,7 +8,10 @@ let taskContainer = document.querySelector('.task-container');
 let arr = [];
 
 function getInput(){
-    let input = writeTask.value;
+    if(writeTask.value ===""){
+        alert("Field can't be empty");
+    }else{
+        let input = writeTask.value;
 
     arr.push(input);
     console.log(input);
@@ -17,6 +20,7 @@ function getInput(){
 
     taskContainer.classList.remove('invisible');
     taskField.innerText = input;
+    }
     
 } 
 
