@@ -19,7 +19,15 @@ function getInput(){
     writeTask.value = "";
 
     taskContainer.classList.remove('invisible');
-    taskField.innerText = input;
+    // taskField.innerText = input;
+
+    for( let i = 0; i < arr.length ; i++ ){
+        let newTaskField = document.createElement('p');
+
+
+    }
+
+
     }
     
 } 
